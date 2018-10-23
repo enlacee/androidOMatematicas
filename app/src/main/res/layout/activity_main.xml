@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@android:color/holo_blue_light"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operaciones_matematicas"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/wakeup"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/campo1"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@android:color/background_light"
+        android:hint="Ingrese el numero: 1"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/campo2"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@android:color/background_light"
+        android:hint="Ingrese el numero: 2"/>
+
+    <!-- Relative Layout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSuma"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="@android:color/holo_blue_light"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btnResta"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnSuma"
+            android:layout_toEndOf="@+id/btnSuma"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btnMultiplicacion"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnResta"
+            android:layout_toEndOf="@+id/btnResta"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btnDivicion"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMultiplicacion"
+            android:layout_toEndOf="@+id/btnMultiplicacion"
+            android:onClick="onClick"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/etiResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+</android.support.v7.widget.LinearLayoutCompat>
