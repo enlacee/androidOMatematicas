@@ -1,6 +1,6 @@
  # Operaciones Matematicas
 
-Aplication named: ´com.pprios.operacionmatematica´
+Application named: ´com.pprios.operacionmatematica´
 Simple application android with:
 
 * Android Studio 3.2.1
@@ -10,3 +10,5 @@ Simple application android with:
 
 Creación de la interface inputs
 Creación de eventos y funciones aritmeticas, reconociendo el lenguaje Java > kotlin on AndroidStudio
+
+![thumbanil](thumbnail.png)
